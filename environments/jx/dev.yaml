@@ -1,0 +1,56 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: "2019-07-23T11:20:49Z"
+  generation: 1
+  labels:
+    env: dev
+    team: jx
+  name: dev
+  namespace: jx
+  resourceVersion: "7067"
+  selfLink: /apis/jenkins.io/v1/namespaces/jx/environments/dev
+  uid: ecadc461-ad3b-11e9-984d-42010a840173
+spec:
+  kind: Development
+  label: Development
+  namespace: jx
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Never
+  source: {}
+  teamSettings:
+    appsRepository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+    buildPackName: kubernetes-workloads
+    buildPackRef: master
+    buildPackUrl: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes.git
+    defaultScheduler:
+      kind: ""
+      name: ""
+    dockerRegistryOrg: quiet-antler-241613
+    envOrganisation: serdarsaygili
+    gitServer: https://github.com
+    helmTemplate: true
+    importMode: YAML
+    kubeProvider: gke
+    pipelineUsername: serdarsaygili
+    promotionEngine: Prow
+    prowConfig: Legacy
+    prowEngine: Tekton
+    quickstartLocations:
+    - excludes:
+      - WIP-*
+      gitKind: github
+      gitUrl: https://github.com
+      includes:
+      - '*'
+      owner: jenkins-x-quickstarts
+    storageLocations:
+    - bucketUrl: gs://laravelcluster-lts-a5450ae3-2a17-4020-b2ce-70fe5260b08d
+      classifier: default
+    - bucketUrl: gs://laravelcluster-lts-a5450ae3-2a17-4020-b2ce-70fe5260b08d
+      classifier: logs
+    useGitOps: true
+    versionStreamUrl: https://github.com/jenkins-x/jenkins-x-versions.git
+  webHookEngine: Prow
+status: {}
