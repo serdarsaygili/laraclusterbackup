@@ -1,0 +1,25 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: "2019-07-23T11:38:03Z"
+  generation: 1
+  name: production
+  namespace: jx
+  resourceVersion: "7132"
+  selfLink: /apis/jenkins.io/v1/namespaces/jx/environments/production
+  uid: 55116834-ad3e-11e9-984d-42010a840173
+spec:
+  kind: Permanent
+  label: Production
+  namespace: jx-production
+  order: 200
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Manual
+  source:
+    url: https://github.com/serdarsaygili/environment-laravelcluster-production.git
+  teamSettings:
+    defaultScheduler:
+      kind: ""
+      name: ""
+status: {}
