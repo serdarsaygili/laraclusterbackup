@@ -1,0 +1,25 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: "2019-07-23T11:37:56Z"
+  generation: 1
+  name: staging
+  namespace: jx
+  resourceVersion: "7095"
+  selfLink: /apis/jenkins.io/v1/namespaces/jx/environments/staging
+  uid: 50994967-ad3e-11e9-984d-42010a840173
+spec:
+  kind: Permanent
+  label: Staging
+  namespace: jx-staging
+  order: 100
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Auto
+  source:
+    url: https://github.com/serdarsaygili/environment-laravelcluster-staging.git
+  teamSettings:
+    defaultScheduler:
+      kind: ""
+      name: ""
+status: {}
